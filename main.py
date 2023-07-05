@@ -9,8 +9,10 @@ from aiogram.dispatcher import FSMContext
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
 
 
+TOKEN = ''
+
 storage = MemoryStorage()
-bot = Bot(token='5964508466:AAFxTaOo61l-M6J0TUuDX9SxSCXcKdpMqA0')
+bot = Bot(TOKEN)
 dp = Dispatcher(bot, storage=storage)
 
 keyboard = ReplyKeyboardMarkup(resize_keyboard=True)
